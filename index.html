@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13th Month Pay Calculator - Flat Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>🗓️ 13th Month Pay Calculator</h1>
+        <p class="intro-text">Enter the **basic monthly salary** for each month worked. Leave a month as '0' if no work was rendered.</p>
+
+        <div class="quick-fill-section">
+            <label for="quickFillSalary">Quick Fill: Same Basic Salary for All Months:</label>
+            <div class="quick-fill-input-group">
+                <input type="number" id="quickFillSalary" placeholder="Enter consistent salary (e.g., 25000)" min="0">
+                <button class="btn quick-fill-button" onclick="quickFillTable()">Apply Quick Fill</button>
+            </div>
+            <p class="quick-fill-note">
+                *Note: This will overwrite all current monthly entries. Edit individual months after applying if needed.
+            </p>
+        </div>
+        <div class="table-container">
+            <table id="salaryTable">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Basic Salary (PHP)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+
+        <button class="btn btn-primary" onclick="calculate13thMonthPay()">Calculate 13th Month Pay</button>
+        
+        <div class="result-container">
+            <h2>💰 Estimated 13th Month Pay:</h2>
+            <p id="totalSalaryEarned">Total Basic Salary Earned: PHP 0.00</p>
+            <p id="result">Enter monthly salaries and click Calculate.</p>
+        </div>
+
+        <div class="info-note">
+            <p>*The 13th Month Pay is calculated as (Total Basic Salary Earned for the Year / 12). This calculation strictly adheres to the basic statutory formula and does not account for tax exemptions or specific company deductions.</p>
+        </div>
+    </div>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="shotbymarkd" data-description="Support me on Buy me a coffee!" data-message="pang libre ug kape hehe " data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script src="script.js"></script>
+</body>
+</html>
