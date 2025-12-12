@@ -19,6 +19,8 @@
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7155194300607704"
      crossorigin="anonymous"></script> 
+
+     <script src="https://tip.markdhemis.online/markdhem.plugin.js" ></script>
 </head>
 <body style="min-width: 100%">
     
@@ -68,8 +70,20 @@
         </div>
         </div>
     </div>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="markdhemisonline" data-description="Support me on Buy me a coffee!" data-message="Support Mark by sending him a coffee" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <div id="payment-widget-container"></div>
+    <script>
+    window.onload = function() {
+        GCPayPlugin.init({
+            containerId: 'payment-widget-container',
+            qrCodeImage: './assets/qr.png', 
+            buttonText: 'Support My Work via GCash',
+            title: 'Salamat sa Suporta!',
+            accountName: 'MA*K DH*M M.',
+        });
+    };
+    </script>
     <script src="script.js"></script>
+    
     <script>
       // Vercel Web Analytics
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments) };
